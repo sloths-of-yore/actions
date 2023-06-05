@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run Trivy vulnerability scanner
-        uses: aquasecurity/trivy-action@0.9.2
+        uses: aquasecurity/trivy-action@0.11.0
         with:
           image-ref: ${{ inputs.image-name }}:${{ inputs.image-tag }}
           vuln-type: 'os,library'
